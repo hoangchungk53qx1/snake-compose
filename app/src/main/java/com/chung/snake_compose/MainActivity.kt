@@ -47,7 +47,7 @@ fun SnakeGame() {
     var snakeBody by remember { mutableStateOf(listOf(Offset(100f, 100f))) }
     var foodPosition by remember { mutableStateOf(randomOffset()) }
     var snakeDirection by remember { mutableStateOf(Offset(1f, 0f)) }
-    val blockSize = with(LocalDensity.current) { 20.dp.toPx() }
+    val blockSize = with(LocalDensity.current) { 30.dp.toPx() }
 
     LaunchedEffect(key1 = Unit) {
         while (true) {
